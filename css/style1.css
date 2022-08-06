@@ -1,0 +1,863 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* line-height: 1.5; */
+}
+
+html, body{
+    overflow-x: hidden;
+    position: relative;
+    width: 100%;
+    scroll-behavior: smooth;
+}
+
+:root{
+    --primary-color: #1B1A20;
+}
+
+hr{
+    display: block;
+    margin-left: 5%;
+    margin-right: 5%;
+    border: #fff 1.5px;
+    border-style: inset;
+}
+
+/* header section */
+header .containerOne{
+    width: 100%; 
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+    position: fixed;
+    background-color: #FFFDF5;
+    z-index: 999;
+    padding: 20px 30px;
+}
+
+header a{
+    text-decoration: none;
+    color: var(--primary-color);
+}
+
+.containerOne .headerLogo{
+    margin-right: 15%;
+}
+
+.nav{
+    display: flex;
+    gap: 30px;
+    font-size: 1.3rem;
+    font-weight: 500;
+
+}
+
+.partOne{
+    display: flex;
+    margin-left: 30px;
+    /* margin-bottom: 4%; */
+    align-items: center;
+}
+
+.partOne img{
+    border: 0.8rem solid rgb(231,51,43);
+    border-radius: 50%;
+    width: 70px;
+    height: 70px;
+    background-color: hsl(5,79%,72%);
+    position: absolute;
+    /* left: 0px; */
+    z-index: 4;
+}
+
+.enrollButton{
+    background-color:rgb(231,51,43);
+    color: #fff;
+    border-radius: 50px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-left: 50px;
+    padding-right:40px ; 
+    font-size: 1.1rem;
+    font-weight: 400; 
+    margin-left: 35px;
+    border: none;
+}
+/* end of header section */
+
+/* hero section */
+.containerTwo{
+    display: flex;
+    justify-content: center;
+    margin-left: 4%;
+    margin-right: 4%; 
+    position: relative;
+    margin-bottom: 20%;
+}
+
+.partTwo p{
+    text-align: center;
+    color: rgb(231,51,43);
+    font-size: 1.3em;
+    font-weight: 200;
+}
+
+.bg-section{
+    margin-top: 9rem;
+}
+
+.heroImageOne{
+    width: 28%;
+    height: 52%;
+    position: relative;
+    margin-top: 5%;
+}
+
+.heroImageTwo{
+    width: 19em;
+    height: 23em;
+    /* margin-left: 25%; */
+}
+
+.heroImageThree{
+    position: absolute;
+    top: 91%;
+    left: 55%;
+    z-index: 1;
+    width: 7%;
+}
+
+.heroImageFour{
+    margin-left: 30%; 
+    height: 15%;
+    width: 5%;
+    position: absolute;
+    bottom: 2px;
+    left: -90px;
+}
+
+ .line{
+    width: 12%;
+    height: 11%;
+    position: absolute;
+    left: 50%;
+    top: 42%; 
+    border: none;
+    z-index: 1;
+} 
+
+.images{
+    display: flex;
+    justify-content: space-between;
+}
+
+.heroTextOne{
+    text-align: center;
+    font-size: 50px;
+    position: relative;
+    z-index: 2;
+}
+
+.heroTextTwo{
+    text-align: center;
+    color: #212529;
+    font-size: 1.3em;
+    font-weight: 200;
+    margin-top: 40px;
+    width: 65%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.btn{
+    background-color: rgb(231,51,43);
+    color: #fff;
+    font-size: 1em;
+    font-weight: 500;
+    border-radius: 40px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 40px;
+    padding-right: 40px;
+    margin-top: 6%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto; 
+    border: none;
+    position: relative;
+    z-index: 2;
+}
+
+/* end of hero section */
+
+ /* beginning of containerTwo section  */
+
+/* end of containerTwo sectiom */
+
+/* zuri section */
+.zuriSection{
+    position: relative;
+    padding: 8% 5% 12% 5%;
+    
+}
+
+.zuriSection span{
+    color:  rgb(231,51,43);
+    font-size: 1.5em;
+    font-weight: 500;
+}
+
+.zuriSection h2{
+    font-size: 2.8em;
+    font-weight: 800;
+}
+
+.zuriText{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 30px;
+    gap: 20px;
+}
+
+.zuriText h2{
+    width: 54%;
+    margin-right: 10%;
+}
+
+.zuriText img{
+    width: 20%;
+}
+
+.zuriSection2{
+    margin-top: 60px;
+}
+
+.zuriPart1{
+    padding: 3% 16px;
+    width: 22rem;
+    height: 22rem;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 16px;
+    align-items: center;
+    background-color: red;
+    color: #fff !important;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 40px;
+}
+
+.zuricard{
+    padding: 3% 16px;
+    width: 22rem;
+    height: 22rem;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 16px;
+    align-items: center;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 40px;
+    box-shadow: 5px 5px 7px rgb(230, 230, 230);
+}
+
+.zuricard:hover, .zuriPart1:hover{
+    transform: translateY(-5%);
+    transition: .3s;
+}
+
+.zuricard h1:nth-child(2){
+    margin: 2.5rem 0;
+    font-size: 30px;
+}
+
+.zuricard h1:nth-child(1){
+    font-size: 40px;
+}
+
+.zuricard p{
+    font-size: 20px;
+}
+
+.zuriCard1{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-row-gap: 3rem;
+    grid-column-gap: 1rem;
+}
+
+@media screen and (max-width:1200px) {
+    .zuriCard1{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (max-width:992px) {
+    .zuriCard1{
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+
+/* .zuriTextOne{
+    color: #fff;
+} */
+
+/* .zuriCard2{
+    display: grid;
+    flex-direction: row;
+} */
+
+/* .zuriPart1{
+    background-color: rgb(231,51,43);
+    margin: 0 30px 30px 0;
+}
+
+.zuriPart2{
+    background-color: rgb(231,51,43);
+    margin: 0 30px 30px 0;
+}
+
+.zuriPart3{
+    background-color: rgb(231,51,43);
+    margin: 0 0 30px 0;
+}
+
+.zuriPart4{
+    background-color: rgb(231,51,43);
+    margin: 0 30px 30px 0;
+}
+
+.zuriPart5{
+    background-color: rgb(231,51,43);
+    margin: 0 30px 30px 0;
+}
+
+.zuriPart6{
+    background-color: rgb(231,51,43);
+    margin: 0 0 30px 0;
+} */
+
+
+
+
+/* 
+
+
+.zuriPart1{
+    background-color: rgb(231,51,43);
+}
+
+..zuriPart2{
+    background-color: rgb(231,51,43);
+}
+
+.zuriPart3{
+    background-color: rgb(231,51,43);
+}
+
+.zuriPart4{
+    background-color: rgb(231,51,43);
+}
+
+.zuriPart5{
+    background-color: rgb(231,51,43); 
+}
+
+.zuriPart6{
+    background-color: rgb(231,51,43);
+} */
+/* end of zuri section */
+
+/*  FAQs SECTION*/
+#FAQSection{
+    position: relative;
+}
+
+.FAQHeader{
+    text-align: center;
+    margin-bottom: 7%;
+    margin-top: 10%;
+}
+
+.FAQHeader p{
+    font-size: 1.7rem;
+    font-weight: 500;
+    color: rgb(231,51,43);
+}
+
+.FAQHeader h1{
+    font-size: 3rem;
+    font-weight: 800;
+}
+
+.FAQHeader img{
+    width: 26%;
+    height: 17%;
+    position: absolute;
+    left: 7%;
+    top: -11%; 
+    border: none;
+    z-index: 1; 
+} 
+#FAQs{
+    display: grid;
+    place-content: center;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.FAQ{
+    width: 100%;
+    border:1px solid rgb(194, 189, 189);
+    padding: 20px ;
+    margin-left: auto;
+    margin-right: auto;
+    cursor: pointer;
+}
+
+.FAQ h3{
+    font-size: 1.3rem;
+    font-weight: 800;
+}
+
+.FAQ p{
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+.FAQuestion{
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 35rem;
+}
+
+.FAQAnswer{
+    display: none;
+}
+
+.FAQ.showFAQ .FAQAnswer{
+    display: block;
+}
+
+.FAQText{
+    display: flex;
+    flex-direction: row;
+    margin-left: 40%;
+    margin-right: auto;
+    margin-top: 7%;
+    margin-bottom: 5%;
+    font-size: 1.3rem;
+    font-weight: 400;
+    
+}
+
+.FAQText button{
+    padding: 14px 40px;
+    border-radius: 20px;
+    background:  rgb(231,51,43);
+    margin-left: 1%;
+    color: #fff;
+    margin-bottom: -15px;
+    font-size: 1rem;
+    font-weight: 400;
+    border: none;
+}
+.FAQText .btn{
+    display: flex;
+    align-content: space-between;
+}
+
+.FAQText .icon{
+    width: 2em;
+}
+/* end of FAQs SECTION*/
+
+/* section high */
+.highSectionOne{
+    width: 43%;
+}
+
+.highSectionTwo{
+    width: 50%;
+}
+
+.high{
+    display: flex;
+    flex-direction: row;
+    background:  rgb(231,51,43);
+    color: #fff;
+    padding: 10% 6% 10% 5%; 
+    align-content: center;
+    align-items: center;
+    position: relative;
+}
+
+#highLady{
+    width: 120%;
+    height: 100%;
+    margin-bottom: 7%;
+}
+
+.highSectionText1{
+    font-size: 1.3rem;
+    font-weight: 400;
+    color: #fff;
+    width: 65%;
+    line-height: 25px;
+}
+
+.highSectionText2{
+    font-size: 3rem;
+    font-weight: 800;
+    color: #fff;
+    margin-bottom: 40px;
+}
+
+.highParts{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+
+
+.button1{
+    display: flex;
+    flex-direction: row; 
+    border: 2px solid #fff;
+    border-radius: 50px;
+    user-select: none;
+    padding: 13px 48px 13px 48px;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 28px;
+}
+
+.button1 img{
+    width: 47px;
+}
+
+.highButton1{
+    color: rgb(231,51,43);
+    background-color: #fff;
+    padding: 10px 30px;
+    border-radius: 50px;
+    font-size: 1.2rem;
+    font-weight: 200;
+    border: none;
+    letter-spacing: 0.3;
+    margin: 30px 0;
+}
+
+.fun{ 
+    color: #fff;
+}
+
+#highwire{
+    position: absolute;
+    width: 6%;
+    top: 12%;
+    right: 67%;
+}
+
+#highdot{
+    position: absolute;
+    width:10%;
+    top: 84%;
+    right: 88%;
+}
+/* end of section high */
+
+/* beginning of  program section */
+.programSection{
+    position: relative;
+    margin-top: 14%;
+}
+
+.programImage1{
+    width: 10%;
+    height: 15%;
+    position: absolute;
+    left: 15%;
+    top: -15%; 
+    border: none;
+    z-index: 1; 
+}
+
+.programImage2{
+    position: absolute;
+    width: 12%;
+    height: 12%;
+    left: 80%;
+    top: -7%;
+}
+
+.programImage3{
+    position: absolute;
+    left: 1%;
+    top: 36%;
+}
+
+#circle{
+    position: absolute;
+    width: 13%;
+    height: 13%;
+    left: 82%;
+    top: 94%;
+    z-index: -2;
+}
+
+#hour{
+    position: absolute;
+    width: 8%;
+    height: 13%;
+    left:  38%;
+    top: 80%;
+}
+
+#time{
+    position: absolute;
+    width: 15%;
+    height: 20%;
+    right: 14%;
+    top: 65%;
+}
+
+.programText{
+    text-align: center;
+}
+
+.programText span{
+    color: rgb(231,51,43);
+    font-size: 1.7rem;
+    font-weight: 400;
+}
+
+.programText h2{
+    font-size: 2.5rem;
+    font-weight: 1000;
+}
+
+.programText p{
+    font-size: 1.3rem;
+    font-weight: 400;
+    margin-top: 2%;
+}
+
+.programStructure{
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 4%;
+    /* align-items: center; */ 
+}
+
+.programStructure h2{
+    color: #fff; 
+    font-size: 2.5rem;
+    font-weight: 1000;
+}
+
+.text {
+    color: #fff; 
+}
+
+.text a {
+    color: #fff; 
+}
+
+.programStructure .full-time{
+    background-color:rgb(27,26,32);
+    color: #fff;
+    width: 70%;
+    padding: 50px 30px 80px 60px;
+    margin-right: 3%; 
+    border-radius: 50px;
+    /* line-height: 2; */
+}
+
+.programStructure .full-time h3{
+    margin-top: 10px;
+    font-size: 1.3rem;
+    font-weight: 800;
+}
+
+.programStructure .full-time ul {
+    padding-left: 18px;
+    font-size: 1.1rem;
+    font-weight: 400;
+    line-height: 1.5;
+}
+
+.programStructure .full-time p{
+    font-size: 1.2rem;
+    font-weight: 500;
+    margin-top: 20px;
+    margin-bottom: 15px;
+    letter-spacing: 1px;
+}
+
+.bullet{
+    list-style: none;
+}
+
+.programStructure .part-time{
+    background-color:rgb(27,26,32);
+    color: #fff;
+    width: 70%;
+    padding: 28px 30px 0px 60px;
+    background-color: black;
+    border-radius: 50px;
+    line-height: 2;
+}
+
+.programStructure .part-time p{
+    font-size: 1.2rem;
+    font-weight: 500;
+    margin-bottom: 15px;
+    letter-spacing: 0.8px;
+    line-height: 22px;
+}
+
+.programStructure .part-time ul {
+    padding-left: 18px;
+    font-size: 1.1rem;
+    font-weight: 400;
+    line-height: 1.5;
+}
+
+.programStructure .part-time h3{
+    font-size: 1.3rem;
+    font-weight: 800;
+}
+
+/* end of  program section */
+
+/* beginning of break section */
+.breakSection{
+    position: relative;
+    width: 90%;
+    height: 100%;
+    text-align: center;
+    margin: 20% auto 8% auto;
+    padding: 100px 150px;
+    border-radius: 30px;
+    background-color: rgb(231,51,43);
+    color: #fff;
+}
+
+.breakSection p{
+    font-size: 1.3rem;
+    font-weight: 400;
+    color: #fff;
+}
+
+.breakSection h1{
+    font-size: 4rem;
+    font-weight: 800;
+    color: #fff;
+}
+
+.breakButton{
+    padding: 10px 40px;
+    font-size: 1.1rem;
+    font-weight: 400;
+    color: rgb(231,51,43);
+    margin-top: 4%;
+    border-radius: 20px;
+    border: none;
+}
+
+#breakCircle{
+    position: absolute;
+    width: 10%;
+    left:  -1%;
+    top: -32%; 
+}
+
+#breakRound{
+    position: absolute;
+    width: 40%;
+    height: 40%;
+    top: 9%;
+    left: -2%;
+}
+
+#breakMains{
+    position: absolute;
+    width: 15%;
+    /* height: 13%; */
+    top: 72%;
+    left: 85%;
+}
+
+#bend{
+    position: absolute;
+    width: 11%;
+    right: -2%;
+    top: 0%;
+}
+
+#curve{
+    position: absolute;
+    width: 11%;
+    left: -1%;
+    bottom: 0%;
+}
+/* end of break section */
+
+/* footer section */
+.footer{
+    width: 90%;
+    margin-bottom: 4%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.footer-one{
+    display: flex;
+    flex-direction: row;
+    align-content: space-between;
+}
+
+#logo{
+    margin-right: 60%;
+}
+
+#socials{
+    display: flex;
+    flex-direction: row;
+    padding: 0 10px 0 10px;
+}
+
+.footer-two{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 4%;
+    font-size: 1.1rem;
+    font-weight: 400;
+}
+
+.footerThree{
+    display: flex;
+    flex-direction: row;
+}
+
+#footerText1{
+    margin-right: 13px;
+}
+/* footer section */

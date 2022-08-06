@@ -1,0 +1,95 @@
+.containerOne{
+    display: flex;
+    /* justify-content: center; 
+    flex-direction: row;
+    /* margin-left: 7%;
+    margin-right: 7%; 
+}
+
+span{
+    color: rgb(231,51,43);
+}
+
+.partTwo{
+    text-align: center;
+}
+
+#lady-image{
+    width: 25%;
+    height: 25%;
+}
+
+.hero-text1 h1{
+    text-align: center;
+    font-size: 50px;
+    /* width: 40px; 
+}
+
+#image1{
+    width: 10%;
+    position: absolute;
+}
+
+#image2{
+    width: 10%;
+    position: absolute;
+}
+*/
+/* hero section */
+
+/* end of hero section 
+
+<!-- beginning of containerTwo -->
+        <div class="containerTwo">
+            <h2>INGRESSIVE FOR GOOD WAS LAUNCHED IN JULY 2020 WITH NO DOLLAR IN DONATION...</h2>
+            <img src="./images/ingresive.jpg" alt="INGRESSIVE FOR GOOD logo">
+            <p>to help increase the earning power of African youths by providing them with tech skills, community, tools, resources, and jobs... 
+                <a href="#">Read More</a>
+            </p>
+        </div>
+        <hr>
+        <!-- end of containertwo -->
+
+        <div class="containerThree">
+            
+        </div>
+
+        <div class="containerFour">
+
+        </div>
+
+        .containerTwo{
+    display: flex;
+    flex-direction: row;
+    /* margin-top: 4%;
+    margin-bottom: 2%; 
+    margin-left: 5%;
+    margin-right: 5%;
+    
+}
+
+.containerTwo h2{
+    width: 100%;
+    font-size: 1.5rem;
+    font-weight: 800;
+    /* margin-top: 5%;
+    margin-right: 10%; */
+}
+
+.containerTwo p{
+    width: -moz-fit-content; 
+    font-size: 2rem;
+    font-weight: 500; 
+    /* margin-left: 20%;
+    margin-top: 2%; */
+}
+
+.containerTwo a{
+    color: rgb(67,185,127);
+    text-decoration: underline;
+}
+
+.containerTwo img {
+    width: 20%;
+    height: 20%;
+}
