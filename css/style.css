@@ -249,7 +249,7 @@ footer{
 
 /* mediaQueries */
 @media screen and (max-width:992px) {
-    .landingPageText{
+    .header-section{
         width: 70%;
     }
 
@@ -267,12 +267,12 @@ footer{
 }
 
 @media screen and (max-width:768px) {
-    .firstButton a{
+    .sectionOneButton1 {
         padding: 13px  25px;
     }
 
-    .secondButton a{
-        padding: 13px  25px;
+    .sectionOneButton2 a{
+        padding: 8px  25px;
     }
 
     .TrainingSection{
