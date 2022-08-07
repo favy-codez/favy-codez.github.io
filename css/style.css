@@ -246,3 +246,111 @@ footer{
     font-weight: 200;
     text-align: center;
 }
+
+/* mediaQueries */
+@media screen and (max-width:992px) {
+    .landingPageText{
+        width: 70%;
+    }
+
+    .landingPageMiddleSection{
+        flex-direction: column;
+    }
+
+    #footerSection{
+        gap: 150px;
+    }
+
+    .footerMediaSection img{
+        width: 10%;
+    }
+}
+
+@media screen and (max-width:768px) {
+    .firstButton a{
+        padding: 13px  25px;
+    }
+
+    .secondButton a{
+        padding: 13px  25px;
+    }
+
+    .TrainingSection{
+        padding: 4rem 3rem 3rem;
+    }
+
+    #footerSection{
+        flex-direction: column;
+        gap: 20px;
+        text-align: center;
+        justify-content: center;
+        padding: 10rem 5rem 5rem 5rem;
+    }
+
+    #footerSection h3{
+        font-size: 24px;
+    }
+
+    .footerMediaSection img{
+        width: 3%;
+    }
+
+    .footerLogo img{
+        width: 25%;
+    }
+}
+
+@media screen and (max-width:576px) {
+    .landingPageText{
+       width: 95%;
+    }
+    
+    .landingPageButton{
+       flex-direction: column;
+       gap: 50px;
+    }
+
+    .firstButton a{
+        margin-right: 0;
+    }
+
+    .landingPageMiddleSection{
+        padding: 70px  35px;
+    }
+
+    .footerLogo img{
+        width: 35%;
+    }
+
+    .footerMediaSection img{
+        width: 5%;
+    }
+
+}
+
+@media screen and (max-width:375px) {
+    /* .header-section{
+        width: 96%;
+    } */
+
+    .landingPageArea h1{
+        font-weight: 600;
+        font-size: 28px;
+    }
+
+    .landingPageMiddleSection{
+        padding: 70px  23px;
+    }
+
+    #footerSection h3{
+        font-size: 23px;
+    }
+
+    .footerLogo img{
+        width: 70%;
+    }
+
+    .footerMediaSection img{
+        width: 9%;
+    }
+}

@@ -1,0 +1,528 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+html, body{
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+a {
+  text-decoration: none;
+}
+
+.navbar{
+    width: 100%; 
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+    position: fixed;
+    background-color: #FFFDF5;
+    z-index: 999;
+    padding: 20px 8%;
+}
+
+.navlinks{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    gap: 70px;
+    cursor: pointer;
+}
+.navlinks .link{
+    padding: 20px 6px;
+}
+
+.navlinks .link:hover{
+    background-color: rgb(229, 245, 240);
+}
+
+.navlinks a{
+   color: #625A64;
+   font-size: 17px;
+   font-weight: 400;
+   text-decoration: none;
+}
+
+.navlinks button{
+    background-color: #E7332B;
+    color: #fff;
+    padding: 10px  35px;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    border-radius: 0 0  10px 0;
+    cursor: pointer;
+}
+
+.firstSection{
+    display: flex;
+    position: relative;
+    justify-content: space-around;
+    align-items: center;
+    padding: 8rem 7rem;
+    gap:10rem;
+    width: 100%;
+    margin-top: 17%;
+}
+
+.firstSection h1{
+    font-weight: 5rem;
+    font-size: 800;
+}
+
+.firstSection p{
+    color: #9a959b;
+    font-weight: 400;
+    font-size: 18px;
+    margin: 30px 0;
+}
+
+.section1Image{
+    width: 75%;
+}
+
+.section1Image img{
+    width: 95%;
+    margin-left: 23px
+}
+
+.thick2rightIcon {
+    position: absolute;
+    left: 42.5%;
+    top: 37%;
+    width: 7% ;
+}
+
+.line1LeftIcon {
+    position: absolute;
+    bottom: 35%;
+    right: 0;
+    width: 11%;
+    z-index: -1;
+}
+
+/* Using bootsrap to add a toggle box effect */
+.toggleButton1{
+    background-color: #E7332B;
+    color: #fff;
+    padding: 10px  35px;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    border-radius: 0 0  10px 0;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+.toggleButton2{
+    background-color: #585858;
+    color: #fff;
+    padding: 10px  35px;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    border-radius: 0 0  10px 0;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+.toggleButton1:hover{
+    box-shadow: 0 2px 5px 1px rgb(168, 167, 167);
+}
+.toggleButton2:hover{
+    box-shadow: 0 2px 5px 1px rgb(168, 167, 167);
+}
+
+.modal-header{
+    display: block;
+    padding: 0;
+}
+
+.modal-content{
+    padding: 5rem  3rem 3rem;
+    border-radius: 15px ;
+}
+
+.modal-header > h5{
+    text-align: center;
+    justify-content: center;
+    font-size: 35px; 
+    font-weight: 700;
+}
+
+.modal-body{
+    text-align: center;
+    justify-content: center;
+}
+
+.modal-body p{
+  color: rgb(48, 47, 47);
+}
+
+.modal-footer {
+    border-top:none;
+}
+
+.modal-header {
+    border-bottom:none;
+}
+
+.form1 button{
+    background-color: #E7332B;
+    color: #fff;
+    padding: 9px  50px;
+    border: none;
+    outline: none;
+    font-size: 17px;
+    border-radius: 0 0  10px 0;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+.form2 button{
+    background-color: #E7332B;
+    color: #fff;
+    padding: 9px  50px;
+    border: none;
+    outline: none;
+    font-size: 17px;
+    border-radius: 0 0  10px 0;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+.form3 button{
+    background-color: #E7332B;
+    color: #fff;
+    padding: 9px  50px;
+    border: none;
+    outline: none;
+    font-size: 17px;
+    border-radius: 0 0  10px 0;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+.form1 button:hover{
+    box-shadow: 0 2px 5px 1px rgb(168, 167, 167);
+}
+
+.form2 button:hover{
+    box-shadow: 0 2px 5px 1px rgb(168, 167, 167);
+}
+
+.form3 button:hover{
+    box-shadow: 0 2px 5px 1px rgb(168, 167, 167);
+}
+/* stops here */
+
+#middleSection{
+    display: flex;
+    background: url(/images/bgsectionpng.png);
+    background-size: cover;
+    align-items: center;
+    justify-content: center;
+    padding:  6rem  5rem; 
+    gap: 30px;
+}
+
+.secondSectionTxt{
+    width: 75%;
+}
+
+.secondSectionTxt h1{
+    font-size: 40px;
+    font-weight: 600;
+}
+
+.secondSectionTxt h5{
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.countryLogo{
+    display: flex;
+    gap: 5px;
+}
+
+.countryLogo img{
+   background-color: #fff;
+   height: 80%;
+   padding: 15px;
+   border-radius: 8px;
+}
+
+.leftImageTag{
+    width: 50%;
+}
+
+.leftImageTag img{
+    width: 100%;
+}
+
+.thirdSection{
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+    padding-left: 5rem;
+    padding-right: 13rem;
+    position: relative;
+    z-index: 2;
+}
+
+.thirdSection h1{
+   width: 50%;
+   font-size: 40px;
+   font-weight: 600;
+}
+
+.whyUsSection1{
+    display:grid;
+    grid-template-columns:  repeat(4, 1fr);
+    margin: 40px 0;
+    width: 90%;
+    gap: 30px;
+}
+
+#layout1 p{
+    border-radius: 8px;
+    box-shadow:  2px 1px 15px rgb(231, 229, 229);
+    padding: 15px 0;
+    text-align: center;
+    font-size: 17px;
+    color: #9a959b;
+    position: relative;
+    z-index: 2;
+}
+
+.whyUsSection2{
+    display:flex;
+    column-gap: 15px;
+    margin-top: 40px;
+    width: 90%;
+    gap: 20px;
+}
+
+#layout2 p {
+    box-shadow:  2px 1px 15px rgb(231, 229, 229);
+    text-align: center;
+    padding:15px 20px;
+    border-radius:8px ;
+    font-size: 17px;
+    color: #9a959b;
+}
+
+#layout2 p:hover, #layout1 p:hover { 
+    cursor: pointer;
+    transform: translateY(-25%);
+    transition: .3s;
+}
+
+
+.line1IconTag {
+    position: absolute;
+    right: 0;
+    top: 25%;
+    width: 23%;
+}
+
+#finalSection{
+    background-color: #FFF8E5;
+    padding: 5rem;
+    text-align: center;
+}
+
+.fourthSectionTxt h1{
+    font-size: 40px;
+    font-weight: 600;
+}
+
+.fourthSection1{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    place-content: center;
+    place-items: center;
+    margin: 50px 10px;
+    text-align: center;
+    width: 100%;
+    gap: 30px;
+}
+
+.fourthSection1 p{
+    font-size: 17px;
+    margin-top: 15px;
+}
+
+.fourthSection2{
+   display: grid;
+   grid-template-columns: repeat(2, 1fr);
+   place-content: center;
+   gap: 30px;
+   width: 75%;
+   margin: auto;
+}
+
+.fourthSection2 p{
+    font-size: 17px;
+    margin-top: 15px;
+}
+
+.sectionImage{
+    background-color: #fff;
+    height: 110%;
+    border-radius: 0 0 20px 0;
+    padding: 2rem;
+}
+ 
+.sectionImage:hover{
+    background-color: #161617;
+    color: #fff;
+}
+
+#footerSection{
+    background-color: #161617;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 5rem;
+    padding-bottom: 5px ;
+    padding-left: 4rem;
+    padding-right: 4rem;
+    color: #fff;
+}
+
+.footerLogoSection p{
+    margin-top: 50px;
+}
+
+.footermedia i{
+    font-size: 35px;
+}
+
+.footermedia p{
+    margin-top: 50px;
+    text-align: center;
+}
+
+.footermedia a{
+    color: #CECECE;
+}
+
+
+
+@media screen and (max-width:992px) {
+    .navbar{
+        padding-left: 4rem;
+        padding-right: 10rem;
+    }
+
+    .navlinks{
+        gap: 50px;
+    }
+
+    .navlinks a{
+        font-size: 15px;
+        font-weight: 400;
+    }
+
+    .navlinks button{
+        padding: 5px  30px;
+    }
+
+    .firstSection{
+        flex-direction: column;
+        padding: 8rem 4rem;
+        width: 85%;
+        gap:5rem;
+        align-content: center;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .firstSection p{
+        width: 85%;
+    }
+    
+    .section1Image img{
+        width: 100%;
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .thick2rightIcon {
+        left: 62%;
+        top: 13.5%;
+        width: 12% ;
+    }
+    
+    .line1LeftIcon {
+       display: none;
+    }
+
+    .toggleButton1{
+        margin-left: 5rem;
+        padding: 10px  50px;
+    }
+
+    .modal-content{
+        padding: 1rem  2rem;
+    }
+
+    #middleSection{
+        padding:  6rem  4rem;
+        gap: 10px; 
+    }
+
+    .secondSectionTxt h1{
+        font-size: 25px;
+        font-weight: 600;
+    }
+
+    .leftImageTag{
+        width: 70%;
+        margin-bottom: auto;
+        margin-right: auto;
+    }
+    
+    .leftImageTag img{
+        width: 85%;
+    }
+
+    .countryLogo{
+        gap: 0;
+    }
+
+    .thirdSection{
+        padding-left: 4rem;
+        padding-right: 4rem;
+    }
+
+    .thirdSection h1{
+       width: 45%;
+       font-size: 33px;
+       font-weight: 600;
+    }
+
+    .whyUsSection1{
+        width: 100%;
+    }
+
+    .whyUsSection2{
+        width: 100%;
+    }
+
+    #layout2 p {
+        padding:15px 12px;
+        font-size: 17px;
+    }
+
+    .line1IconTag {
+       display: none;
+    }
+    
+}

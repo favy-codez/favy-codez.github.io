@@ -192,24 +192,43 @@ header a{
 
 /* end of hero section */
 
- /* beginning of containerTwo section  */
-
-/* end of containerTwo sectiom */
-
-/* zuri section */
-.zuriSection{
-    position: relative;
-    padding: 8% 5% 12% 5%;
-    
+ /* beginning of whySection section  */
+#whySection{
+    display: flex;
+    align-items: center;
+    margin: 3% 5% 3% 4%;
+    justify-content: space-between;
 }
 
-.zuriSection span{
+#whySection img{
+    width: 16%;
+}
+
+#whySection p{
+    width: 30%;
+    font-size: 1.7em;
+    font-weight: 300;
+}
+
+#whySection a{
+    color: rgb(67,185,127);
+    cursor: pointer;
+}
+/* end of whySection sectiom */
+
+/* beginning of zuri section */
+#zuriSection{
+    position: relative;
+    padding: 9% 5% 12% 5%;
+}
+
+#zuriSection span{
     color:  rgb(231,51,43);
     font-size: 1.5em;
     font-weight: 500;
 }
 
-.zuriSection h2{
+#zuriSection h2{
     font-size: 2.8em;
     font-weight: 800;
 }
@@ -242,13 +261,27 @@ header a{
     margin-right: auto;
     border-radius: 16px;
     align-items: center;
-    background-color: red;
+    background-color: rgb(231,51,43);
     color: #fff !important;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     justify-content: center;
     padding: 40px;
+    position: relative;
+}
+
+ .zuriTextOne{
+    font-size: 40px;
+}
+
+.zuriTextThree{
+    margin: 2.5rem 0;
+    font-size: 30px;
+}
+
+ .zuriTextFive{
+    font-size: 20px;
 }
 
 .zuricard{
@@ -268,13 +301,33 @@ header a{
     box-shadow: 5px 5px 7px rgb(230, 230, 230);
 }
 
+.zuriPart2{
+    position: relative;
+}
+
+.zuriPart3{
+    position: relative;
+}
+
+.zuriPart4{
+    position: relative;
+}
+
+.zuriPart5{
+    position: relative;
+}
+
+.zuriPart6{
+    position: relative;
+}
+
 .zuricard:hover, .zuriPart1:hover{
     transform: translateY(-5%);
     transition: .3s;
 }
 
 .zuricard h1:nth-child(2){
-    margin: 2.5rem 0;
+    margin: 2.5rem 0 !important;
     font-size: 30px;
 }
 
@@ -293,6 +346,55 @@ header a{
     grid-column-gap: 1rem;
 }
 
+#curve1{
+    position: absolute;
+    width: 30%;
+    top: 0%;
+    right: 0%;
+}
+
+#curve2{
+    position: absolute;
+    width: 30%;
+    top: 0%;
+    right: 0%;
+}
+
+#curve3{
+    position: absolute;
+    width: 30%;
+    top: 0%;
+    right: 0%;
+}
+
+#curve4{
+    position: absolute;
+    width: 30%;
+    top: 0%;
+    right: 0%;
+}
+
+#curve5{
+    position: absolute;
+    width: 30%;
+    top: 0%;
+    right: 0%;
+}
+
+#curve6{
+    position: absolute;
+    width: 30%;
+    top: 0%;
+    right: 0%;
+}
+
+#zuriWire{
+    width: 8%;
+    position: absolute;
+    right:66%;
+    top: 3%;
+}
+
 @media screen and (max-width:1200px) {
     .zuriCard1{
         grid-template-columns: repeat(2, 1fr);
@@ -304,77 +406,104 @@ header a{
         grid-template-columns: repeat(1, 1fr);
     }
 }
-
-
-/* .zuriTextOne{
-    color: #fff;
-} */
-
-/* .zuriCard2{
-    display: grid;
-    flex-direction: row;
-} */
-
-/* .zuriPart1{
-    background-color: rgb(231,51,43);
-    margin: 0 30px 30px 0;
-}
-
-.zuriPart2{
-    background-color: rgb(231,51,43);
-    margin: 0 30px 30px 0;
-}
-
-.zuriPart3{
-    background-color: rgb(231,51,43);
-    margin: 0 0 30px 0;
-}
-
-.zuriPart4{
-    background-color: rgb(231,51,43);
-    margin: 0 30px 30px 0;
-}
-
-.zuriPart5{
-    background-color: rgb(231,51,43);
-    margin: 0 30px 30px 0;
-}
-
-.zuriPart6{
-    background-color: rgb(231,51,43);
-    margin: 0 0 30px 0;
-} */
-
-
-
-
-/* 
-
-
-.zuriPart1{
-    background-color: rgb(231,51,43);
-}
-
-..zuriPart2{
-    background-color: rgb(231,51,43);
-}
-
-.zuriPart3{
-    background-color: rgb(231,51,43);
-}
-
-.zuriPart4{
-    background-color: rgb(231,51,43);
-}
-
-.zuriPart5{
-    background-color: rgb(231,51,43); 
-}
-
-.zuriPart6{
-    background-color: rgb(231,51,43);
-} */
 /* end of zuri section */
+
+/* beginning of stack section */
+#stacksSection{
+    background-color: rgb(255,253,245);
+    margin: 5% 5%  7% 5%;
+    position: relative;
+}
+
+#stacksSection a{
+    text-decoration: none;
+}
+
+.stackOne{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 7%;
+}
+
+.stackOne p{
+    font-size: 1.7rem;
+    font-weight: 500;
+    color: rgb(231,51,43);
+}
+
+.stackOne h2{
+    font-size: 2.7rem;
+    font-weight: 800;
+}
+
+#stackWire{
+    position: absolute;
+    width: 12%;
+    left: 40%;
+    top: 11%;
+}
+
+.stackTwo{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-row-gap: 3rem;
+    grid-column-gap: 1rem;
+}
+
+.stackCard{
+    background-color: #fff;
+    width: 90%;
+    /* height: 23rem; */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: left;
+    padding: 40px 20px;
+    border-radius: 50px;
+    box-shadow: 1px 1px 1px 1px rgb(230, 230, 230);
+}
+
+.stackCard h4{
+    font-size: 1.3rem;
+    font-weight: 800;
+    margin-bottom: 20px;
+}
+
+.stackCard p{
+    font-size: 1.1rem;
+    font-weight: 500;
+    letter-spacing: 0.5;
+    margin-top: 28px;
+    line-height: 20px;
+}
+
+.stackImg{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.stackImg img{
+    width: 20%;
+}
+
+.stackBtn{
+    background-color:rgb(231,51,43);
+    color: #fff;
+    border-radius: 50px;
+    padding: 10px 30px;
+    font-size: 1.1rem;
+    font-weight: 400; 
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 7%;
+    border: none;
+}
+
+
+/* end of stack section */
 
 /*  FAQs SECTION*/
 #FAQSection{
@@ -714,8 +843,8 @@ header a{
     list-style: none;
 }
 
-.programStructure .part-time{
-    background-color:rgb(27,26,32);
+.programStructure .part-time {
+    background-color:rgb(27,26,32)  !important;
     color: #fff;
     width: 70%;
     padding: 28px 30px 0px 60px;
