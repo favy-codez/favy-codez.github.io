@@ -7,6 +7,11 @@
     font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
 }
 
+html, body{
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
 span{
     color:#E7332B;
 }
@@ -14,6 +19,7 @@ span{
 /* header part */
 header{
     background-image: url(/images/hero-bg.svg);
+    background-size: cover;
     padding-top: 5%;
     padding-bottom: 20%;
     width: 100%;
@@ -121,7 +127,7 @@ header{
 .section-three{
     display: flex;
     flex-direction: row;
-    /* width: 100%; */
+    position: relative;
     height: 100%;
     margin-top: 1%; 
     margin-left: 5%;
@@ -140,6 +146,22 @@ header{
     text-align: center;
     font-size: 14px;
     font-weight: 400;
+}
+
+#programLeft{
+    position: absolute;
+    width: 30%;
+    right: 80%;
+    top: -13%;
+    z-index: -2;
+}
+
+#programRight{
+    position: absolute;
+    width: 30%;
+    right: 0;
+    top: -13%;
+    z-index: -2;
 }
 
 .sectionThreeContent{
@@ -230,6 +252,7 @@ header{
     width: 20px;
 }
 
+
 /* footer */
 hr{
     display: block;
@@ -249,108 +272,266 @@ footer{
 
 /* mediaQueries */
 @media screen and (max-width:992px) {
-    .header-section{
-        width: 70%;
-    }
-
-    .landingPageMiddleSection{
+    header{
+        width: 100%;
+        display: flex;
         flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
 
-    #footerSection{
-        gap: 150px;
+    .section-one p{
+        width: 73%;
+        text-align: center;
     }
 
-    .footerMediaSection img{
-        width: 10%;
-    }
+.section-three{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    margin-left: 2%;
+    margin-right: 2%;
+}
+
+.section-three #part-one{
+    width: 30%;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-bottom: 6%;
+}
+
+.section-three #part-two{
+    width: 30%;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-bottom: 6%;
+}
+
+.section-three #part-three{
+    width: 30%;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-bottom: 6%;
+}
+
+.sectionThreeContent p{
+    width: 80%;
+}
+
+.section-four{
+    display: flex;
+    flex-direction: row;
+    gap: 2;
+}
+
+.section-four .part-four{
+    margin-left: 0;
+    width: 30%;
+    margin-right: 20%;
+}
+
+.section-four .part-img{
+    display: flex;
+    flex-direction: row;
+    gap: 7%;
+}
+
 }
 
 @media screen and (max-width:768px) {
-    .sectionOneButton1 {
-        padding: 13px  25px;
-    }
-
-    .sectionOneButton2 a{
-        padding: 8px  25px;
-    }
-
-    .TrainingSection{
-        padding: 4rem 3rem 3rem;
-    }
-
-    #footerSection{
+    .header-section{
+        display: flex;
         flex-direction: column;
-        gap: 20px;
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 8%;
+    }
+
+    .section-one .sectionOneButton2{
+        margin-left: 0;
+    }
+
+    .section-one h1{
+        margin-top: 18%;
+    }
+
+    .section-one p{
+        width: 84%;
+        text-align: center;
+    } 
+
+    .section-three #programLeft{
+        display: none;
+    }
+
+    .section-three #programRight{
+        display: none;
+    }
+
+    .sectionOneBtn{
+        margin-top: 15%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .sectionOneButton1{
+        margin-bottom: 10%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .sectionOneButton2{
+        margin-left: 0;
+        padding: 20px 40px;
+    }
+    
+    .section-two{
+        margin-top: 2%;
+    }
+
+    .section-three{
+        display: flex;
+        flex-direction: column;
+        width: 300%;
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+
+    .sectionThreeContent p{
+        width: 200%;
+    }
+
+    .section-four{
+        display: flex;
+        flex-direction: column;
         text-align: center;
         justify-content: center;
-        padding: 10rem 5rem 5rem 5rem;
     }
 
-    #footerSection h3{
-        font-size: 24px;
+    .section-four .part-four {
+        display: block;
+        margin-left: 32%;
+        margin-bottom: 3%;
     }
 
-    .footerMediaSection img{
-        width: 3%;
+    .part-five{
+        margin-left: 12%;
     }
 
-    .footerLogo img{
-        width: 25%;
+    .part-six{
+        display: block;
+        margin-left: 29%;
+        margin-top: 7%;
+    }
+
+    .part-seven{
+        display: block;
+        margin-right: 16%;
+        margin-top: 7%;
+    }
+
+    .part-img{
+        display: block;
+        margin-right: 16%;
+        margin-top: 7%;
+    }
+
+    .part-seven h4{
+        margin-left: 15%; 
+    }
+
+    .section-four .part-img{
+        display: flex;
+        flex-direction: row;
+        gap: 0;
+        margin-left: 50%; 
     }
 }
 
 @media screen and (max-width:576px) {
-    .landingPageText{
-       width: 95%;
-    }
-    
-    .landingPageButton{
-       flex-direction: column;
-       gap: 50px;
+    .header-section{
+        margin-top: 13%;
     }
 
-    .firstButton a{
-        margin-right: 0;
+    .header-logo h2{
+        margin-bottom:0 ;
     }
 
-    .landingPageMiddleSection{
-        padding: 70px  35px;
+    .section-one h1{
+        margin-top: 7%;
     }
 
-    .footerLogo img{
-        width: 35%;
+    .section-one p{
+        width: 93%;
+        text-align: center;
+    } 
+
+    .sectionThreeContent{
+        width: 49%;
     }
 
-    .footerMediaSection img{
-        width: 5%;
+    .part-six{
+        display: block;
+        margin-left: 23%;
+        margin-top: 7%;
     }
 
+    .part-seven{
+        display: block;
+        margin-right: 16%;
+        margin-top: 7%;
+    }
+
+    footer h3{
+        display: flex;
+        justify-content: center;
+    }
 }
 
 @media screen and (max-width:375px) {
-    /* .header-section{
-        width: 96%;
-    } */
+    .section-one p{
+        width: 84%;
+        text-align: center;
+    } 
 
-    .landingPageArea h1{
-        font-weight: 600;
-        font-size: 28px;
-    }
+    .header-section {
+        text-align: center;
+        margin-left: auto;
+        margin-top: 8%;
+}
 
-    .landingPageMiddleSection{
-        padding: 70px  23px;
-    }
+.section-one{
+    width: 110%;
+    margin-left: auto;
+    margin-right: auto;
+}
 
-    #footerSection h3{
-        font-size: 23px;
-    }
+.sectionThreeContent{
+    width: 47%;
+}
 
-    .footerLogo img{
-        width: 70%;
-    }
+.section-three #part-one{
+    width: 330px;
+}
 
-    .footerMediaSection img{
-        width: 9%;
-    }
+.section-three #part-two{
+    width: 330px;
+}
+
+.section-three #part-three{
+    width: 330px;
+}
+
+.section-four .part-four {
+    width: 80%;
+    margin-left: 12%;
+}
+
+
+.part-six{
+    margin-left: 12%;
+}
+
+
 }
