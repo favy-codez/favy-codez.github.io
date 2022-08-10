@@ -424,6 +424,10 @@ header a{
     margin-bottom: 7%;
 }
 
+#stackhid{
+    display: none;
+}
+
 .stackOne p{
     font-size: 1.7rem;
     font-weight: 500;
@@ -628,6 +632,10 @@ header a{
     align-content: center;
     align-items: center;
     position: relative;
+}
+
+.highSectionText7{
+    display: none;
 }
 
 #highLady{
@@ -988,3 +996,246 @@ header a{
     margin-right: 13px;
 }
 /* footer section */
+
+/* mediaQueries */
+@media screen and (max-width:1200px) {
+    .footer-one{
+        margin-right: 10%;
+    }
+    .socials{
+        display: flex;
+        flex-direction: row;
+    }
+    .socials img {
+        padding-left: 5px;
+    }
+}
+
+@media screen and (max-width:992px) {
+    .nav{
+        display: none;
+    }
+    .enrollButton {
+        padding-top: 13px;
+        padding-bottom: 13px;
+    }
+    .containerTwo{
+        display: flex;
+        flex-direction: column;
+        position: relative;
+    }
+    .heroImageOne{
+        width: 55%;
+        height: 54%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 3%;
+    }
+    .partTwo{
+        position: absolute;
+        top: 6.6%;
+        left: 30%;
+    }
+    .heroTextOne{
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 5%;
+    }
+    .line{
+        position: absolute;
+        width: 30%;
+        top: 74%;
+        left: 61%;
+    }
+    .heroImageTwo{
+        display: none;
+    }
+    .heroImageThree{
+        position: absolute;
+        left: 63%;
+        width: 10%;
+        top: 105%;
+    }
+    .heroImageFour{
+        position: absolute;
+        margin-left: 0;
+        left: 0%;
+        top: 105%;
+    }
+    #whySection h2{
+        font-size: 16px;
+        display: block;
+    }
+    #whySection #whybr{
+        display: none;
+    }
+    #whySection p{
+        font-size: 19px;
+        text-align: center;
+        width: 27%;
+    }
+    #zuriSection{
+        position: relative;
+    }
+    #zuriWire{
+        position: absolute;
+        left: 30%;
+        top: 1%;
+    }
+    #zuriSection h2{
+        font-size: 30px;
+        width: 48%;
+    }
+    .zuriText img{
+        margin-left: 10%;
+    }
+    .zuriCard1{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .high {
+        display: flex; 
+        flex-direction: column;
+        padding-top: 20%;
+        padding-left: 28%;
+    }
+    .highSectionText2{
+        display:none;
+    }
+    .highSectionText7{
+        display: block;
+        font-size:35px ;
+        font-weight: 1rem;
+        margin-bottom: 30px;
+    }
+    .highSectionOne{
+        width: 160%;
+    }
+    .highPartOne{
+        display: flex;
+        flex-direction: row;
+    }
+    .highPartTwo{
+        display: flex;
+        flex-direction: row;
+    }
+    .button1 {
+        display: flex;
+        flex-direction: row;
+        border: 2px solid #fff;
+        border-radius: 50px;
+        user-select: none;
+        padding: 8px 26px ;
+        align-items: center;
+        gap: 10px;
+        margin-bottom: 28px;
+    }
+    .highfig{
+        margin-right: 20px;
+    }
+    .highSectionTwo {
+        width: 100%;
+        margin-right: 52%;
+    }
+    #highdot {
+        position: absolute;
+        width: 10%;
+        top: 92%;
+        right: 88%;
+    }
+    .stackOne {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        margin-bottom: 7%;
+    }
+    .stackOne h2{
+        display: none;
+    }
+    #stackhid{
+        display: block;
+        font-size: 32px;
+    }
+    .stackTwo {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-row-gap: 1.4rem;
+        grid-column-gap: 0.6rem;
+    }
+    #stackWire {
+        position: absolute;
+        width: 12%;
+        left: 43%;
+        top: 4%;
+    }
+    .FAQHeader p {
+        font-size: 1.4rem;
+        font-weight: 500;
+    }
+    .FAQHeader h1 {
+        font-size: 2rem;
+        font-weight: 800;
+    }
+    .FAQHeader img {
+        width: 23%;
+        height: 11%;
+        top: -6%;
+    }
+    .FAQ {
+        width: 160%;
+    }
+    .programImage3{
+        display: none;
+    }
+    .footer-one {
+        display: flex;
+        margin-right: 25%;
+    }
+}
+
+@media screen and (max-width:768px) {
+    .heroImageOne {
+        width: 55%;
+        height: 54%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 3%;
+    }
+    .line{
+        left: 47%;
+        top: 71%;
+    }
+    .heroImageThree{
+        width: 13%;
+        top: 100%;
+    }
+    .heroImageFour{
+        margin-left: 6%;
+        top: 96%;
+        width: 8%;
+    }
+    #whySection {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    #whySection h2 {
+       display: none;
+    }
+    #whySection #whybr h2{
+        display: block;
+        font-size: 2rem;
+        font-weight: 700;
+    }
+
+}
+
+@media screen and (max-width:576px) {
+    
+}
+
+@media screen and (max-width:375px) {
+    
+
+}
