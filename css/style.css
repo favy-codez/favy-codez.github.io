@@ -101,6 +101,7 @@ header{
 .sectionOneButton1:hover {
     background-color: #fff; 
     color: rgb(231,51,43);
+    border: #E7332B 1px solid;
   }
 
 /* section-two part */

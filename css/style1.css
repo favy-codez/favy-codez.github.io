@@ -1402,6 +1402,7 @@ header a{
 }
 
 @media screen and (max-width:576px) {
+
     .containerOne .headerLogo img{
         width: 75%;
         margin-right: 6%;
@@ -1434,8 +1435,8 @@ header a{
     }
     .line{
         width: 19%;
-        left: 43%;
-        top: 66%;
+        left: 41%;
+        top: 68%;
     }
     .heroTextOne{
         font-size: 30px;

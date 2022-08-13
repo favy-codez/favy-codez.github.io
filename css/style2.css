@@ -10,46 +10,64 @@ html, body{
     scroll-behavior: smooth;
 }
 
+:root{
+    --primary-color: rgb(22,22,23);
+}
+
 a {
   text-decoration: none;
 }
 
-.navbar{
+span{
+    color:rgb(231,51,43);
+}
+/* beginning of header section */
+#header-section{
     width: 100%; 
     display: flex;
     align-items: center;
-    justify-content: space-between;
     flex-direction: row;
     position: fixed;
-    background-color: #FFFDF5;
+    background-color: #fff;
     z-index: 999;
-    padding: 20px 8%;
+    padding: 0 30px;
 }
 
-.navlinks{
+.navBar{
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
-    list-style: none;
-    gap: 70px;
-    cursor: pointer;
-}
-.navlinks .link{
-    padding: 20px 6px;
+    padding: 5px 3rem;
 }
 
-.navlinks .link:hover{
+.navlinks {
+    display: flex;
+    gap: 70%;
+    cursor: pointer;
+    margin-left: 30rem;
+}
+
+.navlinks ul {
+    display: flex;
+}
+
+.navlinks ul li{
+    list-style: none;
+    padding: 5px 29px;
+}
+
+.navlinks ul a {
+    color: var(--primary-color);
+    font-size: 13px;
+    font-weight: 400;
+    text-decoration: none;
+}
+
+.navlinks li:hover{
     background-color: rgb(229, 245, 240);
 }
 
-.navlinks a{
-   color: #625A64;
-   font-size: 17px;
-   font-weight: 400;
-   text-decoration: none;
-}
-
-.navlinks button{
+.headerButton{
     background-color: #E7332B;
     color: #fff;
     padding: 10px  35px;
@@ -59,57 +77,67 @@ a {
     border-radius: 0 0  10px 0;
     cursor: pointer;
 }
+/* end of header section */
 
-.firstSection{
+/* beginning of section one  */
+#sectionOne{
+    margin: 17% 8% 7% 6%;
     display: flex;
     position: relative;
     justify-content: space-around;
     align-items: center;
-    padding: 8rem 7rem;
-    gap:10rem;
+    gap:20rem;
     width: 100%;
-    margin-top: 17%;
 }
 
-.firstSection h1{
-    font-weight: 5rem;
-    font-size: 800;
+#sectionOneImg{
+    width: 80%;
+    padding-right: 6rem;
 }
 
-.firstSection p{
+.sectionOneLeft{
+    width: 120%;
+}
+
+.sectionOneLeft h2{
+    font-size: 2.1rem;
+    font-weight: 600;
+    color: black;
+    margin-bottom: 3rem;
+}
+
+#sectionOneLine{
+    position: absolute;
+    top: 20%;
+    left: 26%;
+}
+
+.sectionOneLeft p{
     color: #9a959b;
     font-weight: 400;
     font-size: 18px;
-    margin: 30px 0;
+    width: 90%;
+    margin-bottom: 3rem;
 }
 
-.section1Image{
-    width: 75%;
+.sectionOneButton{
+    display: flex;
 }
 
-.section1Image img{
-    width: 95%;
-    margin-left: 23px
-}
-
-.thick2rightIcon {
-    position: absolute;
-    left: 42.5%;
-    top: 37%;
-    width: 7% ;
-}
-
-.line1LeftIcon {
-    position: absolute;
-    bottom: 35%;
-    right: 0;
-    width: 11%;
-    z-index: -1;
-}
-
-/* Using bootsrap to add a toggle box effect */
-.toggleButton1{
+.sectionOneButton .btn1{
     background-color: #E7332B;
+    color: #fff;
+    padding: 10px  46px;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    border-radius: 0 0  10px 0;
+    cursor: pointer;
+    margin-right: 20px;
+}
+
+.sectionOneButton .btn2{
+    background-color: #575757;
     color: #fff;
     padding: 10px  35px;
     border: none;
@@ -117,112 +145,19 @@ a {
     font-size: 16px;
     border-radius: 0 0  10px 0;
     cursor: pointer;
-    margin-right: 10px;
 }
 
-.toggleButton2{
-    background-color: #585858;
-    color: #fff;
-    padding: 10px  35px;
-    border: none;
-    outline: none;
-    font-size: 16px;
-    border-radius: 0 0  10px 0;
-    cursor: pointer;
-    margin-right: 10px;
+#sectionOneLine2{
+    width: 10%;
+    position: absolute;
+    top: 64%;
+    z-index: -5;
+    right: 5%;
 }
+/* end of section one  */
 
-.toggleButton1:hover{
-    box-shadow: 0 2px 5px 1px rgb(168, 167, 167);
-}
-.toggleButton2:hover{
-    box-shadow: 0 2px 5px 1px rgb(168, 167, 167);
-}
-
-.modal-header{
-    display: block;
-    padding: 0;
-}
-
-.modal-content{
-    padding: 5rem  3rem 3rem;
-    border-radius: 15px ;
-}
-
-.modal-header > h5{
-    text-align: center;
-    justify-content: center;
-    font-size: 35px; 
-    font-weight: 700;
-}
-
-.modal-body{
-    text-align: center;
-    justify-content: center;
-}
-
-.modal-body p{
-  color: rgb(48, 47, 47);
-}
-
-.modal-footer {
-    border-top:none;
-}
-
-.modal-header {
-    border-bottom:none;
-}
-
-.form1 button{
-    background-color: #E7332B;
-    color: #fff;
-    padding: 9px  50px;
-    border: none;
-    outline: none;
-    font-size: 17px;
-    border-radius: 0 0  10px 0;
-    cursor: pointer;
-    margin-right: 10px;
-}
-
-.form2 button{
-    background-color: #E7332B;
-    color: #fff;
-    padding: 9px  50px;
-    border: none;
-    outline: none;
-    font-size: 17px;
-    border-radius: 0 0  10px 0;
-    cursor: pointer;
-    margin-right: 10px;
-}
-
-.form3 button{
-    background-color: #E7332B;
-    color: #fff;
-    padding: 9px  50px;
-    border: none;
-    outline: none;
-    font-size: 17px;
-    border-radius: 0 0  10px 0;
-    cursor: pointer;
-    margin-right: 10px;
-}
-
-.form1 button:hover{
-    box-shadow: 0 2px 5px 1px rgb(168, 167, 167);
-}
-
-.form2 button:hover{
-    box-shadow: 0 2px 5px 1px rgb(168, 167, 167);
-}
-
-.form3 button:hover{
-    box-shadow: 0 2px 5px 1px rgb(168, 167, 167);
-}
-/* stops here */
-
-#middleSection{
+/* beginning of section Two  */
+#sectionTwo{
     display: flex;
     background: url(/images/bgsectionpng.png);
     background-size: cover;
@@ -232,297 +167,421 @@ a {
     gap: 30px;
 }
 
-.secondSectionTxt{
-    width: 75%;
+#sectionTwoimageRight{
+    width: 97%;
+    padding-left: 42%;
 }
 
-.secondSectionTxt h1{
+.sectionTwoLeft h2{
     font-size: 40px;
     font-weight: 600;
+    width: 110%;
+    margin-bottom: 1.4rem;
 }
 
-.secondSectionTxt h5{
+.sectionTwoLeft p{
     font-size: 20px;
     font-weight: 600;
 }
 
-.countryLogo{
+#sectionTwoTextTwo{
+    color: rgb(120,120,120);
+    margin-top: -7px;
+}
+
+.sectionTwoImages{
     display: flex;
-    gap: 5px;
+    gap: 15px;
 }
 
-.countryLogo img{
-   background-color: #fff;
-   height: 80%;
-   padding: 15px;
-   border-radius: 8px;
+.sectionTwoImages img{
+    background-color: #fff;
+    width: 15%;
+    padding: 2px 10px;
+    border-radius: 8px;
 }
+/* end of section Two  */
 
-.leftImageTag{
-    width: 50%;
-}
-
-.leftImageTag img{
-    width: 100%;
-}
-
-.thirdSection{
-    padding-top: 5rem;
-    padding-bottom: 5rem;
-    padding-left: 5rem;
-    padding-right: 13rem;
+/* beginning of section Three  */
+#sectionThree{
+    margin: 5%;
     position: relative;
-    z-index: 2;
 }
 
-.thirdSection h1{
-   width: 50%;
-   font-size: 40px;
-   font-weight: 600;
+.sectionThreePartA{
+    margin-bottom: 2rem;
 }
 
-.whyUsSection1{
-    display:grid;
-    grid-template-columns:  repeat(4, 1fr);
+#sectionThreeLine{
+    position: absolute;
+    top: 20%;
+    right: -5%;
+    height: 30%;
+}
+
+.sectionThreeTop h1{
+    width: 40%;
+    font-size: 40px;
+    font-weight: 600;
+    margin-bottom: 2rem;
+}
+
+#boxA{
+    display:flex;
+    flex-flow: row wrap;
     margin: 40px 0;
-    width: 90%;
-    gap: 30px;
+    gap: 33px;
+    position: relative;
+    z-index: 5;
 }
 
-#layout1 p{
+.partThreeBox1{
     border-radius: 8px;
     box-shadow:  2px 1px 15px rgb(231, 229, 229);
-    padding: 15px 0;
+    padding: 8px 30px 5px 30px;
     text-align: center;
     font-size: 17px;
+    font-weight: 400;
     color: #9a959b;
     position: relative;
-    z-index: 2;
+    z-index: 999;
 }
 
-.whyUsSection2{
+#boxB{
     display:flex;
-    column-gap: 15px;
-    margin-top: 40px;
-    width: 90%;
-    gap: 20px;
+    flex-flow: row wrap;
+    margin: 40px 0;
+    gap: 10px;
 }
 
-#layout2 p {
-    box-shadow:  2px 1px 15px rgb(231, 229, 229);
-    text-align: center;
-    padding:15px 20px;
-    border-radius:8px ;
-    font-size: 17px;
-    color: #9a959b;
-}
-
-#layout2 p:hover, #layout1 p:hover { 
+.partThreeBox1:hover, .partThreeBox2:hover{
     cursor: pointer;
     transform: translateY(-25%);
     transition: .3s;
 }
 
-
-.line1IconTag {
-    position: absolute;
-    right: 0;
-    top: 25%;
-    width: 23%;
-}
-
-#finalSection{
-    background-color: #FFF8E5;
-    padding: 5rem;
+.partThreeBox2{
+    border-radius: 8px;
+    box-shadow:  2px 1px 15px rgb(231, 229, 229);
+    padding: 8px 27px 5px 27px;
     text-align: center;
+    font-size: 17px;
+    font-weight: 400;
+    color: #9a959b;
+    position: relative;
 }
 
-.fourthSectionTxt h1{
-    font-size: 40px;
+/* end of section Three  */
+
+/* beginning of section Four  */
+.sectionFour{
+    background-color:rgb(255,248,229) ;
+    padding: 6rem 6% 5rem 6%;
+    position: relative;
+}
+
+.sectionFourPartA{
+    text-align: center;
+    font-size: 28px;
     font-weight: 600;
+    margin-bottom: 5rem;
 }
 
-.fourthSection1{
+#sectionFourWire{
+    position: absolute;
+    left: 0;
+    top: 49.7%;
+}
+
+.sectionFourPartB{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    place-content: center;
-    place-items: center;
-    margin: 50px 10px;
+    grid-column-gap: 1.3rem;
     text-align: center;
-    width: 100%;
-    gap: 30px;
 }
 
-.fourthSection1 p{
-    font-size: 17px;
-    margin-top: 15px;
+.sectionFourPartC{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin-top: 10px;
+    grid-column-gap: 1.3rem;
+    margin-left: 16%;
+    margin-right: 16% ;
+    position: relative;
+    z-index: 5;
 }
 
-.fourthSection2{
-   display: grid;
-   grid-template-columns: repeat(2, 1fr);
-   place-content: center;
-   gap: 30px;
-   width: 75%;
-   margin: auto;
-}
-
-.fourthSection2 p{
-    font-size: 17px;
-    margin-top: 15px;
-}
-
-.sectionImage{
+.sectionFourBox{
     background-color: #fff;
-    height: 110%;
     border-radius: 0 0 20px 0;
-    padding: 2rem;
+    padding: 2rem 2rem;
+    height: 300px;
+    margin-bottom: 50px;
 }
- 
-.sectionImage:hover{
-    background-color: #161617;
+
+.sectionFourBox:hover{
+    background: #000;
     color: #fff;
 }
 
-#footerSection{
-    background-color: #161617;
+.sectionFourPartD{
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding-top: 5rem;
-    padding-bottom: 5px ;
-    padding-left: 4rem;
-    padding-right: 4rem;
+    justify-content: center;
+    gap: 20px;
+}
+
+.sectionFourBox1{
+    background-color: #E7332B;
+    color: #fff;
+    padding: 10px  46px;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    border-radius: 0 0  10px 0;
+    cursor: pointer;
+}
+
+.sectionFourBox2{
+    background-color: #575757;
+    color: #fff;
+    padding: 10px  45px;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    border-radius: 0 0  10px 0;
+    cursor: pointer;
+}
+
+#sectionFourImg{
+    margin: 6% ;
+}
+
+#sectionFourText{
+    width: 99%;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 18px;
+    font-weight: 300;
+}
+
+.sectionFourPartC #sectionFourImg2{
+    margin: 9% 37%;
+}
+
+.sectionFourPartC #sectionFourText2{
+    width: 99%;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 18px;
+    font-weight: 300;
+}
+/* end of section Four  */
+
+/* beginning of Footer section  */
+.footerSection{
+    padding:  3rem 5rem 1rem 5rem;
+    display: flex;
+    gap: 40rem;
+    background-color: #000; 
     color: #fff;
 }
 
-.footerLogoSection p{
-    margin-top: 50px;
+.footerPartOne{
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
 }
 
-.footermedia i{
-    font-size: 35px;
+.footerPartOne img{
+    width: 8rem;
 }
 
-.footermedia p{
-    margin-top: 50px;
-    text-align: center;
+.footerPartTwo{
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
 }
 
-.footermedia a{
-    color: #CECECE;
+.footerMedia{
+    display: flex;
+    gap: 15px;
 }
 
+.footerMedia img{
+    width: 35px;
+}
+/* end of Footer section  */
 
+/* modal section */
+.modal-body{
+    padding: 50px 80px;
+    cursor: pointer;
+    border: none;
+    outline: none;
+}
 
-@media screen and (max-width:992px) {
-    .navbar{
-        padding-left: 4rem;
-        padding-right: 10rem;
+.modal-body h1{
+    font-weight: 600;
+    width: 120%;
+    margin-left: -19px;
+    margin-right:30px;
+    margin-top: 20px;
+    margin-right: 20px;
+    font-size: 40px;
+}
+
+.modal-body p{
+    margin: 1.5rem;
+    margin-top: 10px;
+    margin-right: 20px;
+    margin-left: 30px;
+    margin-right:30px;
+    color: rgb(48, 47, 47);
+}
+
+#modaButton{
+    border-radius: 0 0 10px 0;
+    background-color: #E7332B;
+    padding: 10px 40px;
+    color: #fff;
+    border: none;
+}
+
+#modaButton:hover{
+    box-shadow: 0 2px 5px 1px rgb(168, 167, 167);
+}
+
+#modaButton1{
+    border-radius: 0 0 10px 0;
+    background-color: #E7332B;
+    padding: 10px 40px;
+    color: #fff;
+    border: none;
+}
+
+#modaButton1:hover{
+    box-shadow: 0 2px 5px 1px rgb(168, 167, 167);
+}
+
+#modaButton2{
+    border-radius: 0 0 10px 0;
+    background-color: #E7332B;
+    padding: 10px 40px;
+    color: #fff;
+    border: none;
+}
+
+#modaButton2:hover{
+    box-shadow: 0 2px 5px 1px rgb(168, 167, 167);
+}
+
+#modaButton3{
+    border-radius: 0 0 10px 0;
+    background-color: #E7332B;
+    padding: 10px 40px;
+    color: #fff;
+    border: none;
+}
+
+#modaButton3:hover{
+    box-shadow: 0 2px 5px 1px rgb(168, 167, 167);
+}
+
+/* media queries */
+@media screen and (max-width:1200px){
+    #header-section{
+        background-color: #fff;
+        padding-top: 15px;
     }
-
     .navlinks{
-        gap: 50px;
+        margin-left: 24rem;
     }
-
-    .navlinks a{
+    .headerButton{
         font-size: 15px;
-        font-weight: 400;
+        padding: 11px 30px;
     }
-
-    .navlinks button{
-        padding: 5px  30px;
+    .sectionOneLeft h2{
+        width: 170%;
+        font-size: 2.3rem;
     }
-
-    .firstSection{
-        flex-direction: column;
-        padding: 8rem 4rem;
-        width: 85%;
-        gap:5rem;
-        align-content: center;
-        margin-left: auto;
-        margin-right: auto;
+    #sectionOneLine{
+        width: 8%;
+        top: 21.8%;
+        left: 31.5%
     }
-
-    .firstSection p{
+    .sectionOneLeft p{
+        width: 106%;
+    }
+    #sectionOneImg{
         width: 85%;
     }
-    
-    .section1Image img{
-        width: 100%;
-        margin-left: 0;
-        margin-right: 0;
+    #sectionTwoTextTwo{
+        margin-top: 11px;
+        margin-bottom: 15px;
+    }
+    #sectionThree{
+        margin-bottom: 7%;
+    }
+    #sectionThreeLine{
+        height: 25%;
     }
 
-    .thick2rightIcon {
-        left: 62%;
-        top: 13.5%;
-        width: 12% ;
-    }
-    
-    .line1LeftIcon {
-       display: none;
-    }
-
-    .toggleButton1{
-        margin-left: 5rem;
-        padding: 10px  50px;
-    }
-
-    .modal-content{
-        padding: 1rem  2rem;
-    }
-
-    #middleSection{
-        padding:  6rem  4rem;
-        gap: 10px; 
-    }
-
-    .secondSectionTxt h1{
-        font-size: 25px;
-        font-weight: 600;
-    }
-
-    .leftImageTag{
-        width: 70%;
-        margin-bottom: auto;
-        margin-right: auto;
-    }
-    
-    .leftImageTag img{
-        width: 85%;
-    }
-
-    .countryLogo{
-        gap: 0;
-    }
-
-    .thirdSection{
-        padding-left: 4rem;
-        padding-right: 4rem;
-    }
-
-    .thirdSection h1{
-       width: 45%;
-       font-size: 33px;
-       font-weight: 600;
-    }
-
-    .whyUsSection1{
-        width: 100%;
-    }
-
-    .whyUsSection2{
-        width: 100%;
-    }
-
-    #layout2 p {
-        padding:15px 12px;
-        font-size: 17px;
-    }
-
-    .line1IconTag {
-       display: none;
-    }
-    
 }
+
+@media screen and (max-width:992px){
+    .navlinks{
+        margin-left: 10rem;
+    }
+    #sectionOne{
+        display: flex;
+        flex-direction: column;
+    }
+    #sectionOne{
+        margin-top: 20%;
+    }
+    .sectionOneLeft h2{
+        width: 90%;
+        font-size: 2.6rem;
+        margin-left: 22%;
+    }
+    .sectionOneLeft p{
+        width: 45%;
+        text-align: center;
+        margin-left: 22%;
+    }
+    #sectionOneLine{
+        width: 9%;
+        top: 2%;
+        left: 61%;
+    }
+    .sectionOneButton{
+        margin-left: 29%;
+    }
+    .sectionOneButton .btn1{
+        padding: 10px 47px;
+    }
+    .sectionOneButton .btn2{
+        padding: 10px 47px;
+    }
+    #sectionOneImg{
+        width: 70%;
+        margin-top: -17rem;
+        margin-left: 19%;
+    }
+    #sectionOneLine2{
+        display: none;
+    }
+}
+
+@media screen and (max-width:768px){
+
+}
+
+@media screen and (max-width:576px){
+
+}
+
+@media screen and (max-width:375px){
+
+}
+
