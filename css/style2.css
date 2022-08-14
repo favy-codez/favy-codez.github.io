@@ -44,7 +44,7 @@ span{
     display: flex;
     gap: 70%;
     cursor: pointer;
-    margin-left: 30rem;
+    margin-left: 21rem;
 }
 
 .navlinks ul {
@@ -103,21 +103,23 @@ span{
     font-size: 2.1rem;
     font-weight: 600;
     color: black;
-    margin-bottom: 3rem;
+    margin-bottom: 2rem;
+    width: 190%;
 }
 
 #sectionOneLine{
     position: absolute;
-    top: 20%;
-    left: 26%;
+    top: 25%;
+    left: 31%;
+    width: 7%;
 }
 
 .sectionOneLeft p{
     color: #9a959b;
     font-weight: 400;
-    font-size: 18px;
-    width: 90%;
-    margin-bottom: 3rem;
+    font-size: 16px;
+    width: 94%;
+    margin-bottom: 2rem;
 }
 
 .sectionOneButton{
@@ -127,10 +129,10 @@ span{
 .sectionOneButton .btn1{
     background-color: #E7332B;
     color: #fff;
-    padding: 10px  46px;
+    padding: 5px  18px;
     border: none;
     outline: none;
-    font-size: 16px;
+    font-size: 13px;
     border-radius: 0 0  10px 0;
     cursor: pointer;
     margin-right: 20px;
@@ -139,10 +141,10 @@ span{
 .sectionOneButton .btn2{
     background-color: #575757;
     color: #fff;
-    padding: 10px  35px;
+    padding: 5px  18px;
     border: none;
     outline: none;
-    font-size: 16px;
+    font-size: 13px;
     border-radius: 0 0  10px 0;
     cursor: pointer;
 }
@@ -173,9 +175,9 @@ span{
 }
 
 .sectionTwoLeft h2{
-    font-size: 40px;
+    font-size: 30px;
     font-weight: 600;
-    width: 110%;
+    width: 120%;
     margin-bottom: 1.4rem;
 }
 
@@ -216,19 +218,18 @@ span{
     position: absolute;
     top: 20%;
     right: -5%;
-    height: 30%;
+    height: 21%;
 }
 
 .sectionThreeTop h1{
     width: 40%;
-    font-size: 40px;
+    font-size: 30px;
     font-weight: 600;
     margin-bottom: 2rem;
 }
 
 #boxA{
     display:flex;
-    flex-flow: row wrap;
     margin: 40px 0;
     gap: 33px;
     position: relative;
@@ -249,7 +250,6 @@ span{
 
 #boxB{
     display:flex;
-    flex-flow: row wrap;
     margin: 40px 0;
     gap: 10px;
 }
@@ -293,7 +293,11 @@ span{
     top: 49.7%;
 }
 
-.sectionFourPartB{
+.sectionFourBoxPart1{
+    display: none;
+}
+
+.sectionFour-PartB{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-column-gap: 1.3rem;
@@ -491,14 +495,18 @@ span{
 @media screen and (max-width:1200px){
     #header-section{
         background-color: #fff;
-        padding-top: 15px;
+        padding-top: 12px;
     }
     .navlinks{
-        margin-left: 24rem;
+        padding: 0 0px;
+        margin-left: 26rem;
+    }
+    .navlinks ul li{
+        padding: 3px 20px;
     }
     .headerButton{
         font-size: 15px;
-        padding: 11px 30px;
+        padding: 8px 30px;
     }
     .sectionOneLeft h2{
         width: 170%;
@@ -506,11 +514,11 @@ span{
     }
     #sectionOneLine{
         width: 8%;
-        top: 21.8%;
-        left: 31.5%
+        top: 26%;
+        left: 34.5%
     }
     .sectionOneLeft p{
-        width: 106%;
+        width: 110%;
     }
     #sectionOneImg{
         width: 85%;
@@ -523,11 +531,19 @@ span{
         margin-bottom: 7%;
     }
     #sectionThreeLine{
-        height: 25%;
+        height: 16%;
+    }
+    .sectionOneButton .btn1{
+        padding: 0 2.2rem;
+    }
+    .sectionThreeTop h1{
+        width: 44%;
+    }
+    .footerPartOne p{
+        width: 230%;
     }
 
 }
-
 @media screen and (max-width:992px){
     .navlinks{
         margin-left: 10rem;
@@ -545,14 +561,14 @@ span{
         margin-left: 22%;
     }
     .sectionOneLeft p{
-        width: 45%;
+        width: 49%;
         text-align: center;
         margin-left: 22%;
     }
     #sectionOneLine{
         width: 9%;
-        top: 2%;
-        left: 61%;
+        top: 3%;
+        left: 66%;
     }
     .sectionOneButton{
         margin-left: 29%;
@@ -571,17 +587,292 @@ span{
     #sectionOneLine2{
         display: none;
     }
+    .sectionTwoLeft h2{
+        font-size: 30px;
+        width: 150%;
+    }
+    .sectionThreeTop h1{
+        font-size: 30px;
+    }
+    #sectionThreeLine{
+        display: none;
+    }
+    #boxA{
+        gap: 12px;
+    }
+    #boxB{
+        gap: 6px;
+    }
+    .partThreeBox1{
+        padding: 8px 26px;
+    }
+    .partThreeBox1 p{
+        font-size: 14px;
+        font-weight: 700;
+    }
+    .partThreeBox2{
+        padding: 6px 20px;
+    }
+    .sectionFourBoxPart1{
+        display: block;
+    }
+    .sectionFourBoxPart2{
+        display: none;
+    }
+    .sectionFourBox{
+        z-index: 5;
+    }
+    .sectionFourBoxPart2{
+    display: none;
+}
+    .sectionFourPartB{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); 
+    grid-column-gap: 1.3rem;
+    text-align: center;
+    }
+    .sectionBox5{
+        grid-column: 1/4;
+    }
+    .footerSection{
+        gap: 30rem;
+    }
+    .footerPartTwo p{
+        margin-left: 60px;
+    }
+
 }
 
 @media screen and (max-width:768px){
-
+    .navlinks ul .link{
+        display: none;
+    }
+    .navlinks{
+        padding: 0px 12px ;
+        margin: 0;
+    }
+    #header-section .logo{
+        margin-right: 14rem;
+    }
+    .sectionOneLeft h2{
+        font-size: 2.2rem;
+        margin-left: 18%;
+    }
+    .sectionOneLeft p{
+        width:39% ;
+        text-align: center;
+    }
+    .sectionOneButton{
+        margin-left: 22%;
+    }
+    #sectionOneLine{
+        left: 66%;
+        top: 3%;
+    }
+    #sectionTwo{
+        display: flex;
+        flex-direction: column;
+    }
+    .sectionTwoLeft h2{
+        width: 70%;
+        font-size: 27px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .sectionTwoLeft p{
+        font-size: 16px;
+        margin-left: 25%;
+    }
+    .sectionTwoImages{
+        gap: 12px;
+        margin-left: 17%;
+    }
+    .sectionTwoImages img{
+        width: 10%;
+    }
+    #sectionTwoimageRight{
+        padding: 0;
+        width: 60%;
+        margin-left: 17%;
+    }
+    #boxA{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+    }
+    .sectionThreeTop h1{
+        text-align: center;
+        width: 100%;
+    }
+    #boxB{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+    }
+    .footerSection{
+        gap: 20rem;
+    }
+    .footerPartTwo p{
+        margin-left: 50px;
+    }
+    .footerPartOne p{
+        width: 350%;
+    }
 }
 
 @media screen and (max-width:576px){
-
+    #header-section .logo{
+        margin-right: 7rem;
+    }
+    #header-section{
+        padding: 10px 10px 0 10px ;
+    }
+    .navlinks{
+        padding: 0;
+    }
+    .headerButton{
+        padding: 8px 30px;
+    }
+    .sectionOneLeft h2{
+        font-size: 2.8rem;
+        width: 70%;
+        text-align: center;
+        margin-left: 13%;
+    }
+    .sectionOneLeft p{
+        width:57% ;
+        text-align: center;
+    }
+    .sectionOneButton{
+        margin-left: 22%;
+    }
+    #sectionOneLine{
+        left: 49%;
+        top: 4%;
+        width: 14%;
+    }
+    #sectionOne{
+        margin: 30% 0 11% 0;
+    }
+    #sectionTwo{
+        padding: 5rem 2rem;
+    }
+    .sectionTwoLeft h2{
+        width: 79%;
+        font-size: 27px;
+        margin-left: 0;
+    }
+    .sectionTwoLeft p{
+        font-size: 16px;
+        margin-left: 0;
+    }
+    .sectionTwoImages{
+        gap: 12px;
+        margin-left: 0;
+    }
+    #sectionTwoimageRight{
+        width: 80%;
+        margin-left: 13%;
+    }
+    .sectionThreeTop h1{
+        text-align: left;
+    }
+    #sectionThree{
+        padding: 5rem 2rem;
+    }
+    .sectionFourPartA{
+        font-size: 20px;
+    }
+    .sectionFourPartB {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-column-gap: 1.3rem;
+        text-align: center;
+    }
+    .footerBold{
+        display: none;
+    }
+    .footerHidden{
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        text-align: center;
+    }
+    .footerSection{
+        padding-top: 4rem;
+    }
+    .footerPartOne img{
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .footerMedia{
+        margin-left: auto;
+        margin-right: auto;
+    }
 }
 
 @media screen and (max-width:375px){
-
+    #header-section{
+        padding: 10px 0 20px 0;
+    }
+    .navBar{
+        padding: 7px 1rem;
+    }
+    #header-section .logo{
+        margin-right: 3rem;
+    }
+    .navlinks ul li{
+        padding: 0;
+    }
+    .headerButton{
+        padding: 9px 40px;
+        font-size: 11px;
+    }
+    .sectionOneLeft{
+        width: 150%;
+    }
+    .sectionOneLeft h2{
+        margin-left: 14%;
+    }
+    .sectionOneLeft p{
+        width: 52%;
+        margin-left: 23%;
+    }
+    .sectionOneButton{
+        margin-left: 21%;
+    }
+    .sectionOneButton .btn1{
+        padding: 10px 40px;
+    }
+    .sectionOneButton .btn2{
+        padding: 10px 40px;
+    }
+    #sectionOneLine{
+        width: 19%;
+        left: 75%;
+    }
+    #sectionOneImg{
+        width: 90%;
+    }
+    #boxA{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+    }
+    #boxB{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+    }
+    .sectionThreeTop h1{
+        font-size: 25px;
+        width: 108%;
+    }
+    #top3{
+        width: 100%;
+    }
+    .sectionTwoLeft h2{
+        width: 92%;
+    }
+    #sectionFourWire{
+        top: 20%;
+        height: 8%;
+    }
 }
 
