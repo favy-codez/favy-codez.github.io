@@ -276,7 +276,7 @@ span{
 /* beginning of section Four  */
 .sectionFour{
     background-color:rgb(255,248,229) ;
-    padding: 6rem 6% 5rem 6%;
+    padding: 2rem ;
     position: relative;
 }
 
@@ -293,34 +293,13 @@ span{
     top: 49.7%;
 }
 
-.sectionFourBoxPart1{
-    display: none;
-}
-
-.sectionFour-PartB{
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-column-gap: 1.3rem;
-    text-align: center;
-}
-
-.sectionFourPartC{
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    margin-top: 10px;
-    grid-column-gap: 1.3rem;
-    margin-left: 16%;
-    margin-right: 16% ;
-    position: relative;
-    z-index: 5;
-}
-
 .sectionFourBox{
     background-color: #fff;
     border-radius: 0 0 20px 0;
-    padding: 2rem 2rem;
-    height: 300px;
     margin-bottom: 50px;
+    z-index: 5;
+    padding: 2rem;
+    height: 300px;
 }
 
 .sectionFourBox:hover{
@@ -337,7 +316,7 @@ span{
 .sectionFourBox1{
     background-color: #E7332B;
     color: #fff;
-    padding: 10px  46px;
+    padding: 5px 20px;
     border: none;
     outline: none;
     font-size: 16px;
@@ -348,7 +327,7 @@ span{
 .sectionFourBox2{
     background-color: #575757;
     color: #fff;
-    padding: 10px  45px;
+    padding: 5px 20px;
     border: none;
     outline: none;
     font-size: 16px;
@@ -357,32 +336,21 @@ span{
 }
 
 #sectionFourImg{
-    margin: 6% ;
+    margin: 6% ; 
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 #sectionFourText{
-    width: 99%;
-    margin-left: auto;
-    margin-right: auto;
-    font-size: 18px;
-    font-weight: 300;
-}
-
-.sectionFourPartC #sectionFourImg2{
-    margin: 9% 37%;
-}
-
-.sectionFourPartC #sectionFourText2{
-    width: 99%;
-    margin-left: auto;
-    margin-right: auto;
+    text-align: center;
     font-size: 18px;
     font-weight: 300;
 }
 /* end of section Four  */
 
 /* beginning of Footer section  */
-.footerSection{
+.footerBold{
     padding:  3rem 5rem 1rem 5rem;
     display: flex;
     gap: 40rem;
@@ -413,6 +381,10 @@ span{
 
 .footerMedia img{
     width: 35px;
+}
+
+.footerHidden{
+    display: none;
 }
 /* end of Footer section  */
 
@@ -613,12 +585,7 @@ span{
     .partThreeBox2{
         padding: 6px 20px;
     }
-    .sectionFourBoxPart1{
-        display: block;
-    }
-    .sectionFourBoxPart2{
-        display: none;
-    }
+   
     .sectionFourBox{
         z-index: 5;
     }
@@ -640,7 +607,6 @@ span{
     .footerPartTwo p{
         margin-left: 60px;
     }
-
 }
 
 @media screen and (max-width:768px){
@@ -746,7 +712,7 @@ span{
     }
     #sectionOneLine{
         left: 49%;
-        top: 4%;
+        top: 11.5%;
         width: 14%;
     }
     #sectionOne{
@@ -847,7 +813,8 @@ span{
     }
     #sectionOneLine{
         width: 19%;
-        left: 75%;
+        left: 77%;
+        top: 12%;
     }
     #sectionOneImg{
         width: 90%;
@@ -872,7 +839,7 @@ span{
     }
     #sectionFourWire{
         top: 20%;
-        height: 8%;
+        height: 5%;
     }
 }
 
